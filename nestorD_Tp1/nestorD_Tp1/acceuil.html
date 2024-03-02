@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Liste de tâches</title>
+        <link rel="stylesheet" target=_blank href="accueilStyle.css">
+    </head>
+
+
+        <!-------------------------------------- Bouton de la barre latérale --------------------------------------->
+        <div class="w3-teal">
+            <button class="button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
+            <div class="w3-container">
+            </div>
+        </div>
+
+        <body>
+            <!-------------------------------------- Sidebar --------------------------------------->
+            <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+                <button onclick="w3_close()">Close &times;</button>
+            <div id="div1"> <a href="#" class="w3-bar-item button">tâches "1"</a></div>
+            <div id="div2"><a href="#" class="w3-bar-item button">tâches "2"</a></div>
+            <div id="div3"><a href="#" class="w3-bar-item button">tâches "3"</a></div>
+            </div>
+    
+        <!-------------------------------------- Listes des tâches --------------------------------------->
+        <div class="container">
+            <div class="centrerhaut">        
+            <h1>Ma Liste de tâches</h1>
+            <input type="text" id="taskInput" placeholder="Nouvelle tâche...">
+            <button id="addTask">Ajouter</button>
+            </div>
+            <ul id="taskList"></ul>
+            <button id="clearAll">Effacer LocalStorage</button>
+        </div>
+
+        
+
+
+        <script src="accueil.js"></script>
+    </body>
+
+</html>
+
